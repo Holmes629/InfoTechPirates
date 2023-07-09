@@ -1,0 +1,231 @@
+@import url(https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap);
+
+@font-face{
+    font-family:Pinterest-1;
+    src:url("fonts/Pinterest-Sans-Pro-Bold.otf") format("opentype");
+}
+@font-face{
+    font-family:Pinterest-2;
+    src:url("fonts/Pinterest-Sans-Pro-Regular.otf") format("opentype");
+}
+@font-face{
+    font-family:Pinterest-3;
+    src:url("fonts/Pinterest-Sans-Pro-Regular-Italic.otf") format("opentype");
+}
+@font-face{
+    font-family:Pinterest-4;
+    src:url("fonts/Pinterest-UI-Pro-Bold.otf") format("opentype");
+}
+h1,h2,h3{
+    font-weight: 400;
+    font-family: Pinterest-2, sans-serif!important;
+}
+p{
+    font-size: 18px;
+    line-height: 36px;
+    font-family: Pinterest-2, sans-serif!important;
+}
+a{
+    font-size: 18px;
+    font-family: Pinterest-2, sans-serif!important;
+	text-decoration: none;
+}
+body{
+    margin: 0;
+    padding: 0;
+	display: block;
+}
+ul li{
+    list-style: none;
+}
+.row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:space-between;
+}
+.row::after{
+    display: table;
+    clear: both;
+    content: "";
+}
+.col-1 {width: 8.33%}
+.col-2 {width:16.66%}
+.col-3 {width:25%}
+.col-4 {width:33.33%}
+.col-5 {width:41.66%}
+.col-6 {width:50%}
+.col-7 {width:58.33%}
+.col-8 {width:100%}
+.col-9 {width:75%}
+.col-10 {width:83.33%}
+.col-11 {width:91.66%}
+.col-12 {width:100%}
+
+.Header ul.header_ls2 li.selected{
+    box-shadow: 5px 5px #000;
+    background-image: linear-gradient(to bottom right,#4023E3, #A623E3);
+}
+.Header ul.header_ls2 li.selected a{
+    color: #fff;
+}
+/* ######## div-2 (Intro) ########*/
+.intro {
+    display: block;
+    background-image: url('Media/Contact_me_media/intro_bg.jpg') ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 40px 10px;
+}
+.intro .row .col-5 {
+    margin:auto;
+    padding: 40px 10px;
+}
+.intro .row .col-5 h1{
+    font-size: 48px;
+    font-weight: bolder;
+    color: #000;
+    transition: 1s;
+}
+.intro .row .col-5 h1:hover{
+    -webkit-text-stroke: 2px #fff;
+    color: transparent;
+}
+.intro .row .col-5 h2{
+    font-size: 28px;
+    line-height: 46px;
+    color: #000;
+}
+.intro .row .col-5 h2 a{
+    font-size: 32px;
+    color: #000;
+    border-bottom: 2px solid blue;
+}
+.intro .row .col-5 button{
+    background-color: #000;
+    margin: 40px 10px;
+    padding: 15px 40px;
+    border: 2px solid #fff;
+    transition: 0.5s;
+}
+.intro .row .col-5 button a{
+    font-size: 20px;
+    color: #fff;
+}
+.intro .row .col-5 button:hover{
+    box-shadow: 5px 5px 0px rgba(256,256,256,1);
+    border: 2px solid #fff;
+    background-image: linear-gradient(to bottom right,#2386E3, #A623E3);
+}
+.intro .row .img_col{
+    text-align: center;
+}
+.intro .row .col-5 img{
+    height: 350px;
+    width: 350px;
+    border-radius: 50%;
+    border: 2px solid #000;
+    transition: 1s;
+}
+.intro .row .col-5 img:hover{
+    box-shadow: 0px 0px 50px rgba(0,0,0,1);
+}
+/* #### Contact #### */
+
+.Contact .row {
+    padding: 80px 10px;
+}
+.Contact .row .col-5{
+    margin: auto;
+    padding: 10px 20px;
+}
+.Contact .row .col-5 p{
+    margin: 0;
+    margin-left: 10px;
+}
+.Contact .row .col-5 h1{
+    font-size: 48px;
+}
+.Contact .row .col-5 input{
+    width: 70%;
+    margin: 10px;
+    height: 30px;
+    font-size: 16px;
+    padding-left: 20px;
+}
+.Contact .row .col-5 textarea.message{
+    height: 50px;
+    width: 70%;
+    margin: 10px;
+    font-size: 16px;
+    padding-left: 20px;
+    padding-bottom: 50px;
+}
+.Contact .row .col-5 button{
+    margin: 20px 10px;
+    padding: 10px 40px;
+    border: 0;
+    background-color: #5B89BB;
+    font-size: 16px;
+    border-radius: 20px;
+}
+.Contact .row .col-5 button:hover{
+    background-color: #000;
+}
+.Contact .row .col-5 button a{
+    color: #fff;
+}
+.Contact .row .col-5 h2{
+    font-size: 32px;
+}
+.Contact .row .contact2_col2 p{
+    font-size: 26px;
+    line-height: 70px;
+}
+.Contact .row .contact2_col2 p a{
+    font-size: 32px;
+}
+
+
+/* ########## Mobile responsive ############ */
+
+@media screen and (max-width:1000px){
+    /* ######## div2 (Intro) ########*/
+    .intro .row .col-5{
+        width: 80%;
+    }
+    .intro .row .col-5 h1{
+        font-size: 34px;
+    }
+    .intro .row .col-5 h2{
+        font-size: 18px;
+        line-height: 46px;
+        font-weight: bolder;
+    }
+    .intro .row .col-5 h2 a{
+        font-size: 24px;
+    }
+    .intro .row .col-5 img{
+        box-shadow: 0px 0px 50px rgba(0,0,0,1);
+        height: 250px;
+        width: 250px;
+    }
+    /* #### Contact_US-02 #### */
+    
+    .Contact .row .col-5 h1{
+        font-size: 32px;
+    }
+    .Contact .row .col-5{
+        width: 90%;
+    }
+    .Contact .row .contact2_col2 p{
+        font-size: 18px;
+        line-height: 50px;
+    }
+    .Contact .row .contact2_col2 p a{
+        font-size: 18px;
+    }
+    
+}
