@@ -191,6 +191,9 @@ ul li{
 /* ########## Mobile responsive ############ */
 
 @media screen and (max-width:1260px){
+    #preloader{
+        background-size: 50%;
+    }
     .Header ul.header_ls2 ul.menu_ls li{
         display: None;
     }
