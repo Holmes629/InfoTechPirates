@@ -239,7 +239,7 @@ ul li{
 
     /* ######## div3 (Graphic Designer) ########*/
     .graphic .row .col-2 {
-        width: 45%;
+        width: 90%;
         box-shadow: 10px 10px 12px rgba(0,0,0,1);
     }
     .graphic .row .col-2 .inner_div2 h1{
