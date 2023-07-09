@@ -129,7 +129,7 @@ ul li{
 .Header ul.header_ls2 li a{
 	font-size: 24px;
 }
-.Header ul.header_ls2 li:hover:not(li.ls_logo){
+.Header ul.header_ls2 li:hover:not(li.ls_logo, li.menu){
     box-shadow: 5px 5px #000;
     background-image: linear-gradient(to bottom right,#4023E3, #A623E3);
     /* color: ; */
